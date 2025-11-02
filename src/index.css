@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 270 60% 98%;
+    --foreground: 270 15% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 270 15% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 270 15% 10%;
+
+    --primary: 270 70% 60%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 270 70% 55%;
+
+    --secondary: 280 50% 90%;
+    --secondary-foreground: 270 15% 20%;
+
+    --muted: 270 30% 95%;
+    --muted-foreground: 270 10% 50%;
+
+    --accent: 270 70% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 270 30% 88%;
+    --input: 270 30% 88%;
+    --ring: 270 70% 60%;
+
+    --radius: 0.75rem;
+
+    /* Portfolio specific colors */
+    --hero-gradient-start: 260 80% 70%;
+    --hero-gradient-end: 280 60% 85%;
+    --hero-light: 270 60% 97%;
+    --card-bg: 0 0% 100%;
+    --card-shadow: 270 50% 90%;
+    
+    /* Transitions */
+    --transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 270 30% 8%;
+    --foreground: 270 10% 95%;
+
+    --card: 270 25% 12%;
+    --card-foreground: 270 10% 95%;
+
+    --popover: 270 25% 12%;
+    --popover-foreground: 270 10% 95%;
+
+    --primary: 270 70% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 270 70% 60%;
+
+    --secondary: 270 30% 18%;
+    --secondary-foreground: 270 10% 90%;
+
+    --muted: 270 25% 15%;
+    --muted-foreground: 270 10% 60%;
+
+    --accent: 270 70% 65%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 270 25% 20%;
+    --input: 270 25% 20%;
+    --ring: 270 70% 65%;
+
+    --hero-gradient-start: 260 60% 40%;
+    --hero-gradient-end: 280 40% 25%;
+    --hero-light: 270 30% 12%;
+    --card-bg: 270 25% 12%;
+    --card-shadow: 270 50% 5%;
+  }
+}
+
+/* Custom cursor styles */
+.cursor-custom {
+  cursor: none;
+}
+
+.cursor-custom * {
+  cursor: none !important;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    cursor: none;
+  }
+
+  body * {
+    cursor: none !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+
+  .delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .delay-300 {
+    animation-delay: 0.3s;
+  }
+
+  .delay-500 {
+    animation-delay: 0.5s;
+  }
+
+  .delay-700 {
+    animation-delay: 0.7s;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
