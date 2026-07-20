@@ -9,3 +9,4 @@ Update the real time projects and data
 datata
 real data
 create new portfolio 
+use ai
