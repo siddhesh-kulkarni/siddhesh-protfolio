@@ -12,3 +12,4 @@ create new portfolio
 use ai
 use bolt and add animation 
 Tommorow update it 
+please update 
