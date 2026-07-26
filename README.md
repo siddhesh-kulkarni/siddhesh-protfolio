@@ -10,7 +10,5 @@ datata
 real data
 create new portfolio 
 use ai
-use bolt and add animation 
-Tommorow update it 
-please update 
-microservices project need to build 
+use bolt and add animation
+microservices project need to build
